@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>Gulf Bay Ventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Import Monomakh Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Monomakh&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Page container */
+    html, body {
+      height: 100%;
+      font-family: "Monomakh", sans-serif; /* Apply Monomakh font */
+      color: #ffffff;
+      background: url("image.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* Main content wrapper with semi-transparent overlay */
+    .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4); /* Dark overlay to improve text contrast */
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Main heading */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    /* Subtitle / Paragraph */
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Example button styling (optional) */
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ff9800;
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #D97706;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <p>This is a simple landing page.</p>
+
+  <div class="content">
+    <div>
+      <h1>Gulf Bay Ventures</h1>
+      <p>
+        Gulf Bay Ventures is a technology and app-holding company, driving innovation and growth across digital platforms. We build, acquire, and scale cutting-edge apps and tech solutions. 🚀
+      </p>
+      <a href="mailto:support@gulfbayventures.com" class="btn">Contact Us</a>
+    </div>
+  </div>
+
 </body>
 </html>
