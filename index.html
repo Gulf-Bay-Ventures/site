@@ -1,176 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Bay Ventures</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Monomakh&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Nunito', sans-serif;
-        }
-        body {
-            background: white;
-            color: black;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            width: 100%;
-            background: white;
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-        .logo-container img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            position: relative;
-            top: -3px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: normal;
-            font-family: 'Monomakh', sans-serif;
-        }
-        .nav {
-            list-style: none;
-            display: flex;
-        }
-        .nav li {
-            margin-left: 20px;
-        }
-        .nav a {
-            color: black;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        .overlay {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
-            padding: 50px;
-            min-height: 60vh;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .form-container {
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 900px;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.03);
-        }
-        .form-container h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-        .requirements {
-            font-size: 1rem;
-            text-align: left;
-            margin-bottom: 40px;
-        }
-        .requirements ul {
-            padding-left: 30px;
-        }
-        .requirements ul li:last-child {
-            margin-bottom: 30px;
-        }
-        .requirements p:last-of-type {
-            margin-top: 50px;
-        }
-        input, textarea {
-    background: white;
-    color: black;
-    font-size: 0.9rem;
-    border-radius: 10px;
-    padding: 12px 16px;
-    width: 100%;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulf Bay Ventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-button {
-    background: #45b1ff;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 0.9rem;
-    border-radius: 25px;
-    padding: 14px 18px;
-    width: 100%;
-    margin-top: 20px;
-    border: none;
-}
-        button {
-            background: #45b1ff;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        button:hover {
-            background: #399ae6;
-        }
-        .footer {
-    text-align: left;
-    font-size: 0.9rem;
-    padding: 10px 50px;
-    background: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-    </style>
+    body {
+      background: #f9f9f9;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #000;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .footer {
+      padding: 1.5rem 2rem;
+    }
+
+    .copyright {
+      text-align: left;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .copyright {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo-container">
-            <img src="logo.png" alt="Logo">
-            <div class="logo">Gulf Bay Ventures</div>
-        </div>
-        <ul class="nav">
-            <li><a href="mailto:support@gulfbayventures.com">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="overlay">
-        <p style="font-size: 3rem; width: 90%; text-align: center; margin: 0 auto 30px auto;">We acquire, develop, and scale innovative mobile applications to maximize success.</p>
-        <div class="form-container">
-            <h2>Submit Your App</h2>
-            <div class="requirements">
-                <p>Here's what we are looking for:</p>
-                <ul>
-                    <li>At least 5,000 downloads per month</li>
-                    <li>4.2+ star rating</li>
-                    <li>Fun and unique apps</li>
-                    <li>Prefer apps on the store for 6+ months with steady downloads</li>
-                    <li>No bought or paid reviews/ratings</li>
-                </ul>
-                <p>If you have something that might be a fit, please let us know.</p>
-            </div>
-            <form action="https://formspree.io/YOUR_EMAIL" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="app_name" placeholder="App Name" required>
-                <textarea name="description" placeholder="Describe your app" rows="4" style="resize: vertical;" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-    <div class="footer">&copy; 2025 Gulf Bay Ventures. All rights reserved.</div>
+  <div class="container">
+    <h1>Gulf Bay Ventures</h1>
+    <p>Specializing in custom mobile app development for startups and growing businesses.</p>
+    <br>
+    <a href="mailto:support@gulfbayventures.com" class="cta">Contact Us</a>
+  </div>
+
+  <div class="footer">
+    <p class="copyright">&copy; 2025 Gulf Bay Ventures. All rights reserved.</p>
+  </div>
 </body>
 </html>
